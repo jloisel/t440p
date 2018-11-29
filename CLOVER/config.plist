@@ -817,57 +817,11 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>09/17/2018</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBP111.88Z.0147.B00.1809171520</string>
-		<key>Board-ID</key>
-		<string>Mac-189A3D4F975D5FFC</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C02353701CDFH31A8</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x0A</string>
-		<key>EfiVersion</key>
-		<string>149.0.0.0.0</string>
-		<key>Family</key>
-		<string>MacBook Pro</string>
-		<key>FirmwareFeatures</key>
-		<string>0xE80FE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<true/>
-		<key>PlatformFeature</key>
-		<string>0x02</string>
 		<key>ProductName</key>
 		<string>MacBookPro11,1</string>
-		<key>SerialNumber</key>
-		<string>C02M1YYZFH00</string>
-		<key>SmUUID</key>
-		<string>478029B7-83B6-4165-9F1B-1F1A13FD4E12</string>
-		<key>Version</key>
-		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>63736F48-9E29-4F94-8855-32A7FBCA09F6</string>
 		<key>InjectKexts</key>
 		<string>Yes</string>
 	</dict>
