@@ -23,7 +23,7 @@ What works:
 
 For FHD (1920x1080) panels, I recommend to install [One Key HiDPI](https://github.com/xzhih/one-key-hidpi).
 
-## Upgrade from High Sierra
+## Upgrade High Sierra => Mojave
 
 Once the upgrade complete, make sure to rebuild the kext cache to fix brightness control issue, by running in Terminal:
 
