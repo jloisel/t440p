@@ -1,4 +1,6 @@
-# t440p
+# Thinkpad T440P Hackintosh
+
+![T440p Hackintosh](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-hackintosh.jpg)
 
 Thinkpad T440p Hackintosh configuration. 
 
