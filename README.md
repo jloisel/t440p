@@ -7,7 +7,7 @@
 Thinkpad T440p Hackintosh configuration. This repository contains the following folders:
 
 - `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
-- `Kexts`: kexts to install in `Library/Extensions` once macOS has been installed.
+- `Kexts`: kexts to install in `/Library/Extensions` or your local drive once macOS has been installed.
 
 Tested on High Sierra `10.13.6` and Mojave `10.14.2`.
 
@@ -56,6 +56,25 @@ The guide [how to create a Mojave USB Installer Drive](https://hackintosher.com/
 ### Copy EFI Folder to USB
 
 Copy the content of the `EFI` folder provided here on your USB flash drive `EFI` partition. The EFI partition is usually hidden. Use [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/) to mount the EFI partition of your flash drive on your mac (it appears as a disk on the desktop once done).
+
+### Install macOS
+
+Install macOS by booting on the USB key. It takes about 30min. The computer will restart multiple times. Make sure to select `Install macOS ...` each time. Once installed, choose to boot from local drive in Clover boot menu.
+
+### What's next?
+
+To finish the setup, you need to:
+
+- **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB drive). It will make the local drive bootable (so you can get ride of the USB drive now),
+- **Install Kexts**: install kernel extensions provided by `Kexts` from this repository into `/Library/Extensions`.
+
+Once kexts copied, run in *Terminal*:
+
+```
+sudo kextcache -i /
+```
+
+You're almost done! Reboot and enjoy macOS on your Thinpad T440p.
 
 ## Miscellaneous 
 
