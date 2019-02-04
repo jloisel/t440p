@@ -76,7 +76,26 @@ sudo kextcache -i /
 
 You're almost done! Reboot and enjoy macOS on your Thinpad T440p.
 
-## Miscellaneous 
+## Miscellaneous
+
+##### Audio Jack
+
+Thanks [Tony's T440p Guide](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440p.233282/) for help in getting this to work. By default, speaker audio should work, but audio via the headhpone jack does not.
+
+**Installing ALC Fix**
+
+- Copy the .zip file called `alc_fix.zip` inside the foldr `Audio` to the desktop,
+- Open terminal and run:
+
+```bash
+cd Desktop/alc_fix
+sudo su
+./install.sh
+```
+
+The provided `config.plist` is already configured to use *Audio* layout `28`.
+
+Reboot after installation. If you hear a strong white noise when connecting to audio jack, disconnect and reconnect your hearphones.
 
 ### SSD Enable Trim
 
