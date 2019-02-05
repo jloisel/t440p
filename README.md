@@ -11,7 +11,7 @@ Thinkpad T440p Hackintosh configuration. This repository contains the following 
 
 Tested on High Sierra `10.13.6` and Mojave `10.14.2`.
 
-It's a `99.9%` working hackintosh, including:
+It's a `99.99%` working hackintosh, including:
 
 - *Apfs* and *HFS* disk partitions: using `ApfsDriverLoader-64.efi` and `HFSPlus-64.efi` respectively,
 - **Power management**, **Temperature sensors**: Thanks to [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek), which also emulates macbook pro hardware,
@@ -20,10 +20,8 @@ It's a `99.9%` working hackintosh, including:
 - Audio on speakers: using [AppleALC](https://github.com/acidanthera/AppleALC) kext,
 - USB ports: custom made `USBPorts.kext` using [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/),
 - Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext and [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/).
-
-What doesn't work:
-
-- Audio Jack.
+- Audio Jack connector,
+- And Display Port external display.
 
 ## Setup
 
