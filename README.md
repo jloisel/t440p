@@ -107,6 +107,19 @@ sudo trimforce enable
 
 The trackpoint / Touchpad driver used here is the one from [tluck on Insanelymac](https://www.insanelymac.com/forum/topic/315451-guide-lenovo-t460-macos-with-clover/).
 
+**Improving scrolling responsiveness**
+
+Turn off 'inertia' at system-pref/accessibility/mouse & trackpad/trackpad options.
+
+Insstall [Smart Scroll](https://www.marcmoini.com/sx_fr.html). under 'Scroll Wheel+' - Turn up 'Range for a single tick' to max. (this gives the appearance that scrolling becomes more sensitive)
+Then you can adjust the speed and inertia under the same tab.
+
+**Fix Stuttering**
+
+To solve the jittery mouse, increase the speed with [BetterTouchTool](https://folivora.ai/) to about '8'. The touchpad feels almost the same as on my MacBook now, but the scrolling is still slow and awful. I will solve it somehow!
+
+Special thanks to **Romeo Blues** for these tweaks. Those definitely improve how the touchpad feels!
+
 ### UltraBay HDD
 
 When using HDD in Ultrabay (instead of optical drive): install [AHCIPortInjector.kext](https://www.insanelymac.com/forum/files/file/436-ahciportinjectorkext/) and [AppleAHCIPort.kext](https://www.insanelymac.com/forum/files/file/815-appleahciportkext/) in `/Library/Extensions`.
