@@ -403,6 +403,20 @@
 					EgYCCg0KAA==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change LPC to LPCB</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					TFBDXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					TFBDQg==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>
