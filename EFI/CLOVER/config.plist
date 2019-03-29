@@ -27,6 +27,20 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>Change LPC to LPCB</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					TFBDXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					TFBDQg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>Change _OSI to XOSI</string>
 					<key>Disabled</key>
 					<false/>
