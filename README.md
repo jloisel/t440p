@@ -9,7 +9,7 @@ Thinkpad T440p Hackintosh configuration. This repository contains the following 
 - `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
 - `Kexts`: kexts to install in `/Library/Extensions` or your local drive once macOS has been installed.
 
-Tested on High Sierra `10.13.6` and Mojave `10.14.3`.
+Tested on High Sierra `10.13.6` and Mojave `10.14.4`.
 
 It's a `99.99%` working hackintosh, including:
 
