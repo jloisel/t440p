@@ -9,9 +9,9 @@ Thinkpad T440p Hackintosh configuration. This repository contains the following 
 - `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
 - `Kexts`: kexts to install in `/Library/Extensions` or your local drive once macOS has been installed.
 
-Tested on High Sierra `10.13.6` and Mojave `10.14.2`.
+Tested on High Sierra `10.13.6` and Mojave `10.14.4`.
 
-It's a `99.9%` working hackintosh, including:
+It's a `99.99%` working hackintosh, including:
 
 - *Apfs* and *HFS* disk partitions: using `ApfsDriverLoader-64.efi` and `HFSPlus-64.efi` respectively,
 - **Power management**, **Temperature sensors**: Thanks to [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek), which also emulates macbook pro hardware,
@@ -20,10 +20,8 @@ It's a `99.9%` working hackintosh, including:
 - Audio on speakers: using [AppleALC](https://github.com/acidanthera/AppleALC) kext,
 - USB ports: custom made `USBPorts.kext` using [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/),
 - Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext and [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/).
-
-What doesn't work:
-
-- Audio Jack.
+- Audio Jack connector,
+- And Display Port external display.
 
 ## Setup
 
@@ -108,6 +106,19 @@ sudo trimforce enable
 ### Touchpad / Trackpoint Kext
 
 The trackpoint / Touchpad driver used here is the one from [tluck on Insanelymac](https://www.insanelymac.com/forum/topic/315451-guide-lenovo-t460-macos-with-clover/).
+
+**Improving scrolling responsiveness**
+
+Turn off 'inertia' at system-pref/accessibility/mouse & trackpad/trackpad options.
+
+Insstall [Smart Scroll](https://www.marcmoini.com/sx_fr.html). under 'Scroll Wheel+' - Turn up 'Range for a single tick' to max. (this gives the appearance that scrolling becomes more sensitive)
+Then you can adjust the speed and inertia under the same tab.
+
+**Fix Stuttering**
+
+To solve the jittery mouse, increase the speed with [BetterTouchTool](https://folivora.ai/) to about '8'. The touchpad feels almost the same as on my MacBook now, but the scrolling is still slow and awful. I will solve it somehow!
+
+Special thanks to **Romeo Blues** for these tweaks. Those definitely improve how the touchpad feels!
 
 ### UltraBay HDD
 
