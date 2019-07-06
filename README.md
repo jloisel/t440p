@@ -1,3 +1,17 @@
+## This repo was initially forked from https://www.github.com/jloisel/t440p
+
+It Contains modifications that i Use on my system to make it perform better.
+- I purchased a DW1820A wifi card for just $10 on ali Express. With this boot pack it is working (Full 5GHZ wifi and Bluetooth 4.1)
+- The theme is lighter and one I prefer.
+- I have compiled a SSDT Patch for this notebook to make the touchpad scroll better
+- I have deleted all the unecesary ._ files in his repo
+- Removed unecesary drivers and kexts
+- Updated all the kexts and clover to the latest versions.
+- Removed unecesary Kext Files That could cause issues.
+
+For everything else: Please follow his guide below and I will aim to keep this bootpack updated!
+
+
 # Thinkpad T440P Hackintosh
 
 ![T440p Hackintosh](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-hackintosh.jpg)
