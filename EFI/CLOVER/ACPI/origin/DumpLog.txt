@@ -1,0 +1,151 @@
+36:299  1:944  Found BIOS RSDP at F0120
+36:299  0:000  Printing ACPI tables from RSDP F0120 ...
+36:299  0:000   F0120: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+36:299  0:000    (Xsdt: B6EFE170, Rsdt: B6EFE0D4)
+36:299  0:000    B6EFE170: 'XSDT', 'TP-GL', Rev: 1, Len: 212
+36:299  0:000    B6EFE0D4: 'RSDT', 'TP-GL', Rev: 1, Len: 124
+36:299  0:000    Tables in Xsdt: 22
+36:299  0:000    0. B6EF8000: 'FACP', 'TP-GL', Rev: 5, Len: 268
+36:299  0:000        (Dsdt: B6EE1000, Facs: B6D7A000, XDsdt: B6EE1000, XFacs: 0)
+36:299  0:000        B6EE1000: 'DSDT', 'TP-GL', Rev: 1, Len: 72103
+36:304  0:004        B6D7A000: 'FACS', Ver: 2, Len: 64
+36:304  0:000    1. B6EFD000: 'SLIC', 'TP-GL', Rev: 1, Len: 374
+36:304  0:000    2. B6EFB000: 'DBGP', 'TP-GL', Rev: 1, Len: 52
+36:304  0:000    3. B6EFA000: 'ECDT', 'TP-GL', Rev: 1, Len: 82
+36:304  0:000    4. B6EF7000: 'HPET', 'TP-GL', Rev: 1, Len: 56
+36:304  0:000    5. B6EF6000: 'APIC', 'TP-GL', Rev: 1, Len: 152
+36:304  0:000    6. B6EF5000: 'MCFG', 'TP-GL', Rev: 1, Len: 60
+36:304  0:000    7. B6EF4000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+36:304  0:000    8. B6EF3000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158
+36:304  0:000    9. B6EE0000: 'SSDT', 'SataAhci', Rev: 1, Len: 2933
+36:304  0:000    10. B6EDF000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1903
+36:304  0:000    11. B6EDE000: 'SSDT', 'CpuPm', Rev: 1, Len: 2776
+36:304  0:000    12. B6EDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 4700
+36:304  0:000    13. B6EDB000: 'SSDT', 'CppcTabl', Rev: 1, Len: 889
+36:304  0:000    14. B6EDA000: 'PCCT', 'TP-GL', Rev: 5, Len: 110
+36:304  0:000    15. B6ED9000: 'SSDT', 'Cpc_Tabl', Rev: 1, Len: 2756
+36:304  0:000    16. B6ED8000: 'UEFI', 'TP-GL', Rev: 1, Len: 66
+36:304  0:000    17. B6D72000: 'POAT', 'TP-GL', Rev: 3, Len: 85
+36:304  0:000    18. B6EFC000: 'ASF!', 'TP-GL', Rev: 32, Len: 165
+36:304  0:000    19. B6ED7000: 'BATB', 'TP-GL', Rev: 1, Len: 70
+36:304  0:000    20. B6ED6000: 'FPDT', 'TP-GL', Rev: 1, Len: 100
+36:304  0:000    21. B6ED5000: 'UEFI', 'TP-GL', Rev: 1, Len: 738
+36:304  0:000    Tables in Rsdt: 22
+36:304  0:000    0. B6EF9000: 'FACP', 'TP-GL', Rev: 1, Len: 116
+36:304  0:000        (Dsdt: B6EE1000, Facs: B6D7A000)
+36:304  0:000        B6EE1000: 'DSDT', 'TP-GL', Rev: 1, Len: 72103
+36:309  0:005        B6D7A000: 'FACS', Ver: 2, Len: 64
+36:309  0:000    1. B6EFD000: 'SLIC', 'TP-GL', Rev: 1, Len: 374
+36:309  0:000    2. B6EFB000: 'DBGP', 'TP-GL', Rev: 1, Len: 52
+36:309  0:000    3. B6EFA000: 'ECDT', 'TP-GL', Rev: 1, Len: 82
+36:309  0:000    4. B6EF7000: 'HPET', 'TP-GL', Rev: 1, Len: 56
+36:309  0:000    5. B6EF6000: 'APIC', 'TP-GL', Rev: 1, Len: 152
+36:309  0:000    6. B6EF5000: 'MCFG', 'TP-GL', Rev: 1, Len: 60
+36:309  0:000    7. B6EF4000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+36:309  0:000    8. B6EF3000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158
+36:309  0:000    9. B6EE0000: 'SSDT', 'SataAhci', Rev: 1, Len: 2933
+36:309  0:000    10. B6EDF000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1903
+36:309  0:000    11. B6EDE000: 'SSDT', 'CpuPm', Rev: 1, Len: 2776
+36:309  0:000    12. B6EDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 4700
+36:309  0:000    13. B6EDB000: 'SSDT', 'CppcTabl', Rev: 1, Len: 889
+36:309  0:000    14. B6EDA000: 'PCCT', 'TP-GL', Rev: 5, Len: 110
+36:309  0:000    15. B6ED9000: 'SSDT', 'Cpc_Tabl', Rev: 1, Len: 2756
+36:309  0:000    16. B6ED8000: 'UEFI', 'TP-GL', Rev: 1, Len: 66
+36:309  0:000    17. B6D72000: 'POAT', 'TP-GL', Rev: 3, Len: 85
+36:309  0:000    18. B6EFC000: 'ASF!', 'TP-GL', Rev: 32, Len: 165
+36:309  0:000    19. B6ED7000: 'BATB', 'TP-GL', Rev: 1, Len: 70
+36:309  0:000    20. B6ED6000: 'FPDT', 'TP-GL', Rev: 1, Len: 100
+36:309  0:000    21. B6ED5000: 'UEFI', 'TP-GL', Rev: 1, Len: 738
+36:309  0:000  Found UEFI Acpi 2.0 RSDP at B6EFE014
+36:309  0:000  Saving ACPI tables from RSDP B6EFE014 to EFI\CLOVER\ACPI\origin ...
+36:309  0:000   B6EFE014: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+36:315  0:005    (Xsdt: B6EFE170, Rsdt: B6EFE0D4)
+36:315  0:000    B6EFE170: 'XSDT', 'TP-GL', Rev: 1, Len: 212 -> XSDT.aml
+36:317  0:002    B6EFE0D4: 'RSDT', 'TP-GL', Rev: 1, Len: 124 -> RSDT.aml
+36:320  0:002    Tables in Xsdt: 22
+36:320  0:000    0. B6EF8000: 'FACP', 'TP-GL', Rev: 5, Len: 268 -> FACP.aml
+36:323  0:002        (Dsdt: B6EE1000, Facs: B6D7A000, XDsdt: B6EE1000, XFacs: 0)
+36:323  0:000        B6EE1000: 'DSDT', 'TP-GL', Rev: 1, Len: 72103 -> DSDT.aml
+36:334  0:011        B6D7A000: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+36:337  0:002    1. B6EFD000: 'SLIC', 'TP-GL', Rev: 1, Len: 374 -> SLIC.aml
+36:340  0:003    2. B6EFB000: 'DBGP', 'TP-GL', Rev: 1, Len: 52 -> DBGP.aml
+36:343  0:003    3. B6EFA000: 'ECDT', 'TP-GL', Rev: 1, Len: 82 -> ECDT.aml
+36:346  0:002    4. B6EF7000: 'HPET', 'TP-GL', Rev: 1, Len: 56 -> HPET.aml
+36:350  0:003    5. B6EF6000: 'APIC', 'TP-GL', Rev: 1, Len: 152 -> APIC.aml
+36:353  0:002    6. B6EF5000: 'MCFG', 'TP-GL', Rev: 1, Len: 60 -> MCFG.aml
+36:355  0:002    7. B6EF4000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51 -> SSDT-0-TP-SSDT1.aml
+36:359  0:003    8. B6EF3000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158 -> SSDT-1-TP-SSDT2.aml
+36:362  0:002    9. B6EE0000: 'SSDT', 'SataAhci', Rev: 1, Len: 2933 -> SSDT-2-SataAhci.aml
+36:374  0:011    10. B6EDF000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1903 -> SSDT-3-Cpu0Ist.aml
+36:377  0:003    11. B6EDE000: 'SSDT', 'CpuPm', Rev: 1, Len: 2776 -> SSDT-4-CpuPm.aml (Found hidden SSDT 4 pcs)
+36:380  0:002        * AE93A018: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1903  53 53 44 54 6F 07 00 00 01 1D 4C 45 4E 4F 56 4F Internal length = 1903 -> SSDT-x4_0-Cpu0Ist.aml
+36:384  0:003        * B6BAB618: 'SSDT', 'ApIst', Rev: 1, Len: 1450  53 53 44 54 AA 05 00 00 01 D3 50 6D 52 65 66 00 Internal length = 1450 -> SSDT-x4_1-ApIst.aml
+36:386  0:002        * B6BAA918: 'SSDT', 'Cpu0Cst', Rev: 1, Len: 1078  53 53 44 54 36 04 00 00 01 68 50 6D 52 65 66 00 Internal length = 1078 -> SSDT-x4_2-Cpu0Cst.aml
+36:389  0:002        * B6BB5C18: 'SSDT', 'ApCst', Rev: 1, Len: 281  53 53 44 54 19 01 00 00 01 EF 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x4_3-ApCst.aml
+36:393  0:003  
+36:393  0:000    12. B6EDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 4700 -> SSDT-5-SaSsdt.aml
+36:396  0:003    13. B6EDB000: 'SSDT', 'CppcTabl', Rev: 1, Len: 889 -> SSDT-6-CppcTabl.aml
+36:400  0:003    14. B6EDA000: 'PCCT', 'TP-GL', Rev: 5, Len: 110 -> PCCT.aml
+36:402  0:002    15. B6ED9000: 'SSDT', 'Cpc_Tabl', Rev: 1, Len: 2756 -> SSDT-7-Cpc_Tabl.aml
+36:406  0:003    16. B6ED8000: 'UEFI', 'TP-GL', Rev: 1, Len: 66 -> UEFI.aml
+36:410  0:003    17. B6D72000: 'POAT', 'TP-GL', Rev: 3, Len: 85 -> POAT.aml
+36:412  0:002    18. B6EFC000: 'ASF!', 'TP-GL', Rev: 32, Len: 165 -> ASF!.aml
+36:417  0:004    19. B6ED7000: 'BATB', 'TP-GL', Rev: 1, Len: 70 -> BATB.aml
+36:420  0:002    20. B6ED6000: 'FPDT', 'TP-GL', Rev: 1, Len: 100 -> FPDT.aml
+36:423  0:003    21. B6ED5000: 'UEFI', 'TP-GL', Rev: 1, Len: 738 -> UEFI.aml
+36:427  0:004    Tables in Rsdt: 22
+36:427  0:000    0. B6EF9000: 'FACP', 'TP-GL', Rev: 1, Len: 116 -> RSDT-FACP.aml
+36:431  0:003        (Dsdt: B6EE1000, Facs: B6D7A000)
+36:431  0:000        B6EE1000: 'DSDT', 'TP-GL', Rev: 1, Len: 72103
+36:436  0:004        B6D7A000: 'FACS', Ver: 2, Len: 64
+36:436  0:000    1. B6EFD000: 'SLIC', 'TP-GL', Rev: 1, Len: 374
+36:436  0:000    2. B6EFB000: 'DBGP', 'TP-GL', Rev: 1, Len: 52
+36:436  0:000    3. B6EFA000: 'ECDT', 'TP-GL', Rev: 1, Len: 82
+36:436  0:000    4. B6EF7000: 'HPET', 'TP-GL', Rev: 1, Len: 56
+36:436  0:000    5. B6EF6000: 'APIC', 'TP-GL', Rev: 1, Len: 152
+36:436  0:000    6. B6EF5000: 'MCFG', 'TP-GL', Rev: 1, Len: 60
+36:436  0:000    7. B6EF4000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+36:436  0:000    8. B6EF3000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158
+36:436  0:000    9. B6EE0000: 'SSDT', 'SataAhci', Rev: 1, Len: 2933
+36:436  0:000    10. B6EDF000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1903
+36:436  0:000    11. B6EDE000: 'SSDT', 'CpuPm', Rev: 1, Len: 2776
+36:436  0:000    12. B6EDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 4700
+36:436  0:000    13. B6EDB000: 'SSDT', 'CppcTabl', Rev: 1, Len: 889
+36:436  0:000    14. B6EDA000: 'PCCT', 'TP-GL', Rev: 5, Len: 110
+36:436  0:000    15. B6ED9000: 'SSDT', 'Cpc_Tabl', Rev: 1, Len: 2756
+36:436  0:000    16. B6ED8000: 'UEFI', 'TP-GL', Rev: 1, Len: 66
+36:436  0:000    17. B6D72000: 'POAT', 'TP-GL', Rev: 3, Len: 85
+36:436  0:000    18. B6EFC000: 'ASF!', 'TP-GL', Rev: 32, Len: 165
+36:436  0:000    19. B6ED7000: 'BATB', 'TP-GL', Rev: 1, Len: 70
+36:436  0:000    20. B6ED6000: 'FPDT', 'TP-GL', Rev: 1, Len: 100
+36:436  0:000    21. B6ED5000: 'UEFI', 'TP-GL', Rev: 1, Len: 738
+36:436  0:000  Found UEFI Acpi 1.0 RSDP at B6EFE000
+36:436  0:000  Printing ACPI tables from RSDP B6EFE000 ...
+36:436  0:000   B6EFE000: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+36:436  0:000    (Rsdt: B6EFE038)
+36:436  0:000    B6EFE038: 'RSDT', 'TP-GL', Rev: 1, Len: 120
+36:436  0:000    Tables in Rsdt: 21
+36:436  0:000    0. B6EF9000: 'FACP', 'TP-GL', Rev: 1, Len: 116
+36:436  0:000        (Dsdt: B6EE1000, Facs: B6D7A000)
+36:436  0:000        B6EE1000: 'DSDT', 'TP-GL', Rev: 1, Len: 72103
+36:441  0:004        B6D7A000: 'FACS', Ver: 2, Len: 64
+36:441  0:000    1. B6EFB000: 'DBGP', 'TP-GL', Rev: 1, Len: 52
+36:441  0:000    2. B6EFA000: 'ECDT', 'TP-GL', Rev: 1, Len: 82
+36:441  0:000    3. B6EF7000: 'HPET', 'TP-GL', Rev: 1, Len: 56
+36:441  0:000    4. B6EF6000: 'APIC', 'TP-GL', Rev: 1, Len: 152
+36:441  0:000    5. B6EF5000: 'MCFG', 'TP-GL', Rev: 1, Len: 60
+36:441  0:000    6. B6EF4000: 'SSDT', 'TP-SSDT1', Rev: 1, Len: 51
+36:441  0:000    7. B6EF3000: 'SSDT', 'TP-SSDT2', Rev: 1, Len: 1158
+36:441  0:000    8. B6EE0000: 'SSDT', 'SataAhci', Rev: 1, Len: 2933
+36:441  0:000    9. B6EDF000: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1903
+36:441  0:000    10. B6EDE000: 'SSDT', 'CpuPm', Rev: 1, Len: 2776
+36:441  0:000    11. B6EDC000: 'SSDT', 'SaSsdt', Rev: 1, Len: 4700
+36:441  0:000    12. B6EDB000: 'SSDT', 'CppcTabl', Rev: 1, Len: 889
+36:441  0:000    13. B6EDA000: 'PCCT', 'TP-GL', Rev: 5, Len: 110
+36:441  0:000    14. B6ED9000: 'SSDT', 'Cpc_Tabl', Rev: 1, Len: 2756
+36:441  0:000    15. B6ED8000: 'UEFI', 'TP-GL', Rev: 1, Len: 66
+36:441  0:000    16. B6D72000: 'POAT', 'TP-GL', Rev: 3, Len: 85
+36:441  0:000    17. B6EFC000: 'ASF!', 'TP-GL', Rev: 32, Len: 165
+36:441  0:000    18. B6ED7000: 'BATB', 'TP-GL', Rev: 1, Len: 70
+36:441  0:000    19. B6ED6000: 'FPDT', 'TP-GL', Rev: 1, Len: 100
+36:441  0:000    20. B6ED5000: 'UEFI', 'TP-GL', Rev: 1, Len: 738
