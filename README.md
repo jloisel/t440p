@@ -1,6 +1,6 @@
 ## This repo was initially forked from https://www.github.com/jloisel/t440p
-
-It Contains modifications that i Use on my system to make it perform better.
+### But it is now very different
+It contains modifications that I use on my system to make it perform better.
 - I purchased a DW1820A wifi card for just $10 on ali Express. With this boot pack it is working (Full 5GHZ wifi and Bluetooth 4.1)
 - The theme is lighter and one I prefer.
 - I have compiled a SSDT Patch for this notebook to make the touchpad scroll better
@@ -30,10 +30,10 @@ It's a `99.99%` working hackintosh, including:
 - *Apfs* and *HFS* disk partitions: using `ApfsDriverLoader-64.efi` and `HFSPlus-64.efi` respectively,
 - **Power management**, **Temperature sensors**: Thanks to [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek), which also emulates macbook pro hardware,
 - **Battery status**: handled by [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver) kext,
-- Brightness control: Thanks to [AppleBacklightFixup](https://bitbucket.org/RehabMan/applebacklightfixup) kext,
+- Brightness control: Thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext,
 - Audio on speakers: using [AppleALC](https://github.com/acidanthera/AppleALC) kext,
-- USB ports: custom made `USBPorts.kext` using [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/),
-- Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext and [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/).
+- USB ports: custom made inside SSDT-T440p.aml & USBInjectAll kext (Thanks to rehabman & Snikii,
+- Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext.
 - Audio Jack connector,
 - And Display Port external display.
 
