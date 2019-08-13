@@ -1,5 +1,5 @@
-## This repo was initially forked from https://www.github.com/jloisel/t440p
-### But it is now very different
+#### This repo was initially forked from https://www.github.com/jloisel/t440p
+## But it is now very different
 It contains modifications that I use on my system to make it perform better.
 - I purchased a DW1820A wifi card for just $10 on ali Express. With this boot pack it is working (Full 5GHZ wifi and Bluetooth 4.1)
 - The theme is lighter and one I prefer.
@@ -23,7 +23,7 @@ Thinkpad T440p Hackintosh configuration. This repository contains the following 
 - `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
 - `Kexts`: kexts to install in `/Library/Extensions` or your local drive once macOS has been installed.
 
-Tested on High Sierra `10.13.6` and Mojave `10.14.4`.
+Tested on High Sierra `10.13.6` and Mojave `10.14.4`, `10.14.5` & `10.14.6`.
 
 It's a `99.99%` working hackintosh, including:
 
