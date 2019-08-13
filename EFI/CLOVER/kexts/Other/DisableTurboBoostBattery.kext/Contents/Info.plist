@@ -3,79 +3,65 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>17D102</string>
+	<string>13A510d</string>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>Lilu</string>
+	<string>DisableTurboBoostBattery</string>
 	<key>CFBundleIdentifier</key>
-	<string>as.vit9696.Lilu</string>
+	<string>pk.qwerty12.DisableTurboBoostBattery</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Lilu</string>
+	<string>DisableTurboBoostBattery</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.3.8</string>
+	<string>2.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleSupportedPlatforms</key>
-	<array>
-		<string>MacOSX</string>
-	</array>
 	<key>CFBundleVersion</key>
-	<string>1.3.8</string>
+	<string>2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>9F2000</string>
+	<string>5A11344j</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>17E189</string>
+	<string>12D75</string>
 	<key>DTSDKName</key>
-	<string>macosx10.13</string>
+	<string>macosx10.8</string>
 	<key>DTXcode</key>
-	<string>0941</string>
+	<string>0500</string>
 	<key>DTXcodeBuild</key>
-	<string>9F2000</string>
+	<string>5A11344j</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>as.vit9696.Lilu</key>
+		<key>FirstPersonality</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>as.vit9696.Lilu</string>
+			<string>pk.qwerty12.DisableTurboBoostBattery</string>
 			<key>IOClass</key>
-			<string>Lilu</string>
+			<string>DisableTurboBoostBattery</string>
 			<key>IOMatchCategory</key>
-			<string>Lilu</string>
+			<string>IODefaultMatchCategory</string>
+			<key>IONameMatch</key>
+			<string>IOPMrootDomain</string>
 			<key>IOProviderClass</key>
-			<string>IOResources</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
+			<string>IOService</string>
 		</dict>
 	</dict>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2016-2018 vit9696. All rights reserved.</string>
-	<key>OSBundleCompatibleVersion</key>
-	<string>1.2.0</string>
 	<key>OSBundleLibraries</key>
 	<dict>
-		<key>com.apple.kpi.bsd</key>
-		<string>12.0.0</string>
-		<key>com.apple.kpi.dsep</key>
-		<string>12.0.0</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>12.0.0</string>
+		<string>9.0.0</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>12.0.0</string>
+		<string>9.0.0</string>
 		<key>com.apple.kpi.mach</key>
-		<string>12.0.0</string>
+		<string>9.0.0</string>
 		<key>com.apple.kpi.unsupported</key>
-		<string>12.0.0</string>
+		<string>9.0.0</string>
 	</dict>
-	<key>OSBundleRequired</key>
-	<string>Root</string>
 </dict>
 </plist>
