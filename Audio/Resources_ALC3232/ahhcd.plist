@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>HDAConfigDefault</key>
+	<array>
+		<dict>
+			<key>#AFGLowPowerState</key>
+			<data>AwAAAA==</data>
+			<key>Codec</key>
+			<string>Sniki - ALC3232 &quot;Combo Jack&quot; ThinkPads</string>
+			<key>CodecID</key>
+			<integer>283902610</integer>
+			<key>ConfigData</key>
+			<data>ASccEAEnHQABJx6gAScfkAFHHCABRx0AAUceFwFHH5ABRwwCAVccMAFXHRABVx4hAVcfAAFXDAIBpxxAAacdEAGnHoEBpx8A</data>
+			<key>FuncGroup</key>
+			<integer>1</integer>
+			<key>LayoutID</key>
+			<integer>28</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

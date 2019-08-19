@@ -1,3 +1,17 @@
+#### This repo was initially forked from https://www.github.com/jloisel/t440p
+## But it is now very different
+It contains modifications that I use on my system to make it perform better.
+- I purchased a DW1820A wifi card for just $10 on ali Express. With this boot pack it is working (Full 5GHZ wifi and Bluetooth 4.1)
+- The theme is lighter and one I prefer.
+- I have compiled a SSDT Patch for this notebook to make the touchpad scroll better
+- I have deleted all the unecesary ._ files in his repo
+- Removed unecesary drivers and kexts
+- Updated all the kexts and clover to the latest versions.
+- Removed unecesary Kext Files That could cause issues.
+
+For everything else: Please follow his guide below and I will aim to keep this bootpack updated!
+
+
 # Thinkpad T440P Hackintosh
 
 ![T440p Hackintosh](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-hackintosh.jpg)
@@ -9,17 +23,17 @@ Thinkpad T440p Hackintosh configuration. This repository contains the following 
 - `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
 - `Kexts`: kexts to install in `/Library/Extensions` or your local drive once macOS has been installed.
 
-Tested on High Sierra `10.13.6` and Mojave `10.14.4`.
+Tested on High Sierra `10.13.6` and Mojave `10.14.4`, `10.14.5` & `10.14.6`.
 
 It's a `99.99%` working hackintosh, including:
 
 - *Apfs* and *HFS* disk partitions: using `ApfsDriverLoader-64.efi` and `HFSPlus-64.efi` respectively,
 - **Power management**, **Temperature sensors**: Thanks to [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek), which also emulates macbook pro hardware,
 - **Battery status**: handled by [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver) kext,
-- Brightness control: Thanks to [AppleBacklightFixup](https://bitbucket.org/RehabMan/applebacklightfixup) kext,
+- Brightness control: Thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext,
 - Audio on speakers: using [AppleALC](https://github.com/acidanthera/AppleALC) kext,
-- USB ports: custom made `USBPorts.kext` using [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/),
-- Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext and [Intel FBPatcher](https://www.insanelymac.com/forum/topic/335018-hackintool-v176/).
+- USB ports: custom made inside SSDT-T440p.aml & USBInjectAll kext (Thanks to rehabman & Snikii,
+- Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext.
 - Audio Jack connector,
 - And Display Port external display.
 

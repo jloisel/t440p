@@ -8,10 +8,16 @@
 		<true/>
 		<key>DSDT</key>
 		<dict>
+			<key>DropOEM_DSM</key>
+			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>#Comment-IRQ Fix</key>
-				<string>The following fixes may be needed for onboard audio/USB/etc</string>
+				<key>AddMCHC</key>
+				<true/>
+				<key>AddPNLF</key>
+				<true/>
+				<key>FixAirport</key>
+				<true/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
@@ -51,20 +57,6 @@
 					<key>Replace</key>
 					<data>
 					WERTTQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Change XHCI to XHC</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					WEhDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WEhDXw==
 					</data>
 				</dict>
 				<dict>
@@ -153,20 +145,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(_PTS,1,N) to ZPTS</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X1BUUwE=
-					</data>
-					<key>Replace</key>
-					<data>
-					WlBUUwE=
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Change Method(_WAK,1,N) to ZWAK</string>
 					<key>Disabled</key>
 					<false/>
@@ -237,20 +215,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(L1D,0,N) to XL1D</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X0wxRA==
-					</data>
-					<key>Replace</key>
-					<data>
-					WEwxRA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>Change Method(_Q15,0,N) to XQ15</string>
 					<key>Disabled</key>
 					<false/>
@@ -279,7 +243,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(_Q6A,0,N) to XQ28</string>
+					<string>Change Method(_Q6A,0,N) to XQ6A</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -293,7 +257,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(_Q16,0,N) to XQ19</string>
+					<string>Change Method(_Q16,0,N) to XQ16</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -307,7 +271,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(_Q64,0,N) to XQ2A</string>
+					<string>Change Method(_Q64,0,N) to XQ64</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -405,6 +369,12 @@
 				</dict>
 			</array>
 		</dict>
+		<key>DisabledAML</key>
+		<array>
+			<string>SSDT.aml</string>
+			<string>SSDT-XCPM.aml</string>
+			<string>SSDT-PluginType1.aml</string>
+		</array>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -427,18 +397,20 @@
 				<key>PluginType</key>
 				<true/>
 			</dict>
-			<key>NoDynamicExtract</key>
-			<true/>
 			<key>NoOemTableId</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>#DefaultVolume</key>
-		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>kext-dev-mode=1 keepsyms=1</string>
+		<string>dart=0 -cdfon kext-dev-mode=1 keepsyms=1 -wegbeta -lilubeta -alcbeta</string>
+		<key>Debug</key>
+		<false/>
+		<key>DefaultVolume</key>
+		<string>LastBootedVolume</string>
+		<key>Log</key>
+		<false/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -446,85 +418,23 @@
 		<key>Timeout</key>
 		<integer>5</integer>
 	</dict>
+	<key>Comment</key>
+	<string>This file is for Lenovo Thinkpad T440P</string>
 	<key>Devices</key>
 	<dict>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<integer>28</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0)/Pci(0x02,0)</key>
 			<dict>
-				<key>## patch0</key>
-				<string>Enable internal display after sleep for 0x0a2e0008 on 10.10.2-10.12.x (c) syscl</string>
-				<key>## patch1</key>
-				<string>Enable internal display after sleep for 0x0a2e000a, 0x0a26000a</string>
-				<key>#framebuffer-con1-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con1-flags</key>
-				<data>
-				BgAAAA==
-				</data>
-				<key>#framebuffer-con1-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
-				<key>#framebuffer-con1-type</key>
-				<data>
-				AAgAAA==
-				</data>
-				<key>#framebuffer-con2-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con2-flags</key>
-				<data>
-				BgAAAA==
-				</data>
-				<key>#framebuffer-con2-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
-				<key>#framebuffer-con2-type</key>
-				<data>
-				AAgAAA==
-				</data>
-				<key>#framebuffer-con3-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con3-flags</key>
-				<data>
-				BgAAAA==
-				</data>
-				<key>#framebuffer-con3-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
-				<key>#framebuffer-con3-type</key>
-				<data>
-				AAgAAA==
-				</data>
-				<key>#framebuffer-patch0-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-patch0-find</key>
-				<data>
-				AQAAAEAAAAAeAAAABQUJAQ==
-				</data>
-				<key>#framebuffer-patch0-replace</key>
-				<data>
-				AQAAAEAAAAAPAAAABQUJAQ==
-				</data>
-				<key>#framebuffer-patch1-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-patch1-find</key>
-				<data>
-				AQAAAEAAAAAeAgAABQUJAQ==
-				</data>
-				<key>#framebuffer-patch1-replace</key>
-				<data>
-				AQAAAEAAAAAfAgAABQUJAQ==
-				</data>
-				<key>#hda-gfx</key>
-				<string>onboard-1</string>
+				<key>## @1 HDMI</key>
+				<string></string>
+				<key>## @2 VGA</key>
+				<string></string>
 				<key>AAPL,ig-platform-id</key>
 				<data>
 				BgAmCg==
@@ -533,6 +443,18 @@
 				<data>
 				EgQAAA==
 				</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>
+				AQUSAAAEAACHAAAA
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con2-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con2-type</key>
+				<data>
+				AAEAAA==
+				</data>
 				<key>framebuffer-cursormem</key>
 				<data>
 				AACQAA==
@@ -540,14 +462,38 @@
 				<key>framebuffer-patch-enable</key>
 				<integer>1</integer>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
+			<key>PciRoot(0)/Pci(0x03,0)</key>
 			<dict>
+				<key>#Comment</key>
+				<string>Intel HDMI Audio Codec</string>
 				<key>layout-id</key>
-				<data>
-				HAAAAA==
-				</data>
+				<integer>28</integer>
+			</dict>
+			<key>PciRoot(0)/Pci(0x1b,0)</key>
+			<dict>
+				<key>#Comment</key>
+				<string>Realtek ALC3232 Audio Codec</string>
+				<key>layout-id</key>
+				<integer>28</integer>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x01)/Pci(0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,4353</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
+				<key>model</key>
+				<string>Dell DW1820 (BCM4350) 802.11ac wireless</string>
+				<key>name</key>
+				<string>Airport</string>
 			</dict>
 		</dict>
+		<key>SetIntelBacklight</key>
+		<true/>
+		<key>SetIntelMaxBacklight</key>
+		<true/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -557,6 +503,8 @@
 			<key>Inject</key>
 			<true/>
 		</dict>
+		<key>UseIntelHDMI</key>
+		<false/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -615,15 +563,10 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>Thinkpad</string>
+		<string>clover-minimal-inverted</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>EDID</key>
-		<dict>
-			<key>Inject</key>
-			<false/>
-		</dict>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
@@ -633,8 +576,6 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string></string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -653,40 +594,22 @@
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AQUJAAAEAACHAAAA
+				ILniAAAADzA=
 				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				AQUSAAAIAACHAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				AgQJAAAEAACHAAAA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleIntelFramebufferAzul</string>
-				<key>Replace</key>
-				<data>
-				AgQSkAAAgAAIcAAA
+				ILniAAAAkJA=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 release kernel (credit vit9696)</string>
+				<string>Disable panic kext logging on 10.13 release kernel (credit Vandroiy)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -702,7 +625,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 release kernel (credit vit9696)</string>
+				<string>Disable panic kext logging on 10.14 release kernel (credit Vandroiy)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -714,133 +637,6 @@
 				<key>Replace</key>
 				<data>
 				igKEwOtC
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				ILniAAAADzA=
-				</data>
-				<key>MatchOS</key>
-				<string>10.12.x,10.11.x</string>
-				<key>Replace</key>
-				<data>
-				ILniAAAAkJA=
-				</data>
-			</dict>
-		</array>
-		<key>KextsToPatch</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>Enable TRIM for SSD (Use only with HFS+J)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				RiV1VCUwNHgA
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Replace</key>
-				<data>
-				RiV1VHh4eHgA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Zeroing 885 Codec</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				hQjsEA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Zeroing 884 Codec</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				hAjsEA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Patching 1984 with 10ec0292 Codec</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				hBnUEQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				kgLsEA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Zeroing 1983 Codec</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				gxnUEQ==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
 				</data>
 			</dict>
 		</array>
@@ -860,7 +656,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<string>Detect</string>
 	</dict>
 </dict>
 </plist>
