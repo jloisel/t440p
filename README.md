@@ -1,20 +1,35 @@
-#### This repo was initially forked from https://www.github.com/jloisel/t440p
-## But it is now very different
-It contains modifications that I use on my system to make it perform better.
-- I purchased a DW1820A wifi card for just $10 on ali Express. With this boot pack it is working (Full 5GHZ wifi and Bluetooth 4.1)
-- The theme is lighter and one I prefer.
-- I have compiled a SSDT Patch for this notebook to make the touchpad scroll better
-- I have deleted all the unecesary ._ files in his repo
-- Removed unecesary drivers and kexts
-- Updated all the kexts and clover to the latest versions.
-- Removed unecesary Kext Files That could cause issues.
-
-For everything else: Please follow his guide below and I will aim to keep this bootpack updated!
-
-
 # Thinkpad T440P Hackintosh
 
 ![T440p Hackintosh](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-hackintosh.jpg)
+
+## Changelog
+
+### 1.3 (19th August 2019)
+
+- DW1820A wifi card support (Full 5GHZ wifi and Bluetooth 4.1),
+- Lighter Clover Theme,
+- Modified Patched SSDT to have better working touchpad,
+- Deleted all the unecesary ._ files in his repo,
+- Removed unecesary drivers and kexts,
+- Updated all the kexts and clover to the latest version,
+- Removed unecesary Kext Files That could cause issues,
+- Tested on Mojave `10.14.6`.
+
+### 1.2 (3rd August 2019)
+
+- Revert renaming LPC to LPCB (both in ACPI patch and config.plist) as it seems not to work properly.
+
+### 1.1 (12th April 2019)
+
+- Updated configuration tested with 10.14.4.
+
+### 1.0.1 (18th January 2019)
+
+- Remove unnecessary Kernel Extensions. Add HFS+ driver to support MacOS Journalized filesystem.
+
+### 1.0.0 (3rd January 2019)
+
+Initial Release.
 
 ## Introduction
 
