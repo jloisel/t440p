@@ -12,7 +12,7 @@
 - Deleted all the unecesary ._ files in his repo,
 - Removed unecesary drivers and kexts,
 - Updated all the kexts and clover to the latest version,
-- Removed unecesary Kext Files That could cause issues,
+- Removed unecessary Kext Files That could cause issues,
 - Tested on Mojave `10.14.6`.
 
 ### 1.2 (3rd August 2019)
