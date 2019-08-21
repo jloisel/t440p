@@ -16,6 +16,8 @@
 				<true/>
 				<key>AddPNLF</key>
 				<true/>
+				<key>FixAirport</key>
+				<true/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
@@ -474,6 +476,19 @@
 				<key>layout-id</key>
 				<integer>28</integer>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1c,0x01)/Pci(0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,4353</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
+				<key>model</key>
+				<string>Dell DW1820 (BCM4350) 802.11ac wireless</string>
+				<key>name</key>
+				<string>Airport</string>
+			</dict>
 		</dict>
 		<key>SetIntelBacklight</key>
 		<true/>
@@ -497,6 +512,8 @@
 	</array>
 	<key>GUI</key>
 	<dict>
+		<key>#ScreenResolution</key>
+		<string>1920x1080</string>
 		<key>Custom</key>
 		<dict>
 			<key>Entries</key>
@@ -566,6 +583,10 @@
 		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
+		<key>ForceKextsToLoad</key>
+		<array>
+			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
+		</array>
 		<key>KernelLapic</key>
 		<true/>
 		<key>KernelPm</key>
