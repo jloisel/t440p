@@ -11,7 +11,7 @@
 - Deleted all the unecesary ._ files in his repo,
 - Removed unecesary drivers and kexts,
 - Updated all the kexts and clover to the latest version,
-- Removed unecesary Kext Files That could cause issues,
+- Removed unecessary Kext Files That could cause issues,
 - Tested on Mojave `10.14.6`.
 
 ### 1.2 (3rd August 2019)
@@ -35,7 +35,7 @@ Initial Release.
 Thinkpad T440p Hackintosh configuration. This repository contains the following folders:
 
 - `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
-- `Kexts`: kexts to install in `/Library/Extensions` or your local drive once macOS has been installed.
+- `EFI/CLOVER/kexts/Other`: kexts to install in `/Library/Extensions` or your local drive once macOS has been installed.
 
 Tested on High Sierra `10.13.6` and Mojave `10.14.4`, `10.14.5` & `10.14.6`.
 
@@ -92,7 +92,7 @@ Install macOS by booting on the USB key. It takes about 30min. The computer will
 To finish the setup, you need to:
 
 - **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB drive). It will make the local drive bootable (so you can get ride of the USB drive now),
-- **Install Kexts**: install kernel extensions provided by `Kexts` from this repository into `/Library/Extensions`.
+- **Install Kexts**: install kernel extensions provided by `EFI/CLOVER/kexts/Other` from this repository into `/Library/Extensions`.
 
 Once kexts copied, run in *Terminal*:
 
