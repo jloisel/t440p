@@ -1,8 +1,7 @@
-# Thinkpad T440P Hackintosh
-
 ![T440p Hackintosh](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-hackintosh.jpg)
 
 ## Changelog
+=======
 
 ### 1.3 (19th August 2019)
 
@@ -105,7 +104,19 @@ You're almost done! Reboot and enjoy macOS on your Thinpad T440p.
 
 ## Miscellaneous
 
-##### Audio Jack
+### for DW1820A WiFi Card
+
+- Please see the contents of DW1820A folder:
+- Copy the kexts into EFI/CLOVER/kexts/Other/
+- Copy the config.plist into EFI/CLOVER/ and overwrite the other config.plist file.
+
+- If you struggle to install macOS with the card installed, it is recommended to remove the card, install the OS via ethernet, and put the card back in once setup completes.
+
+Other drivers for Other Operating systems can be found here:
+
+https://github.com/ameeno/DELL-DW1820A-Drivers
+
+### Audio Jack
 
 Thanks [Tony's T440p Guide](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440p.233282/) for help in getting this to work. By default, speaker audio should work, but audio via the headhpone jack does not.
 
