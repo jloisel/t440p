@@ -5,6 +5,8 @@
 
 ### 1.3 (19th August 2019)
 
+Special thanks to @ameeno for this release.
+
 - DW1820A wifi card support (Full 5GHZ wifi and Bluetooth 4.1),
 - Lighter Clover Theme,
 - Modified Patched SSDT to have better working touchpad,
