@@ -3,6 +3,10 @@
 ## Changelog
 =======
 
+### 1.4 (22th August 2019)
+
+Separate DW1820 wifi card config.
+
 ### 1.3 (19th August 2019)
 
 Special thanks to @ameeno for this release.
