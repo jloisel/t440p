@@ -189,3 +189,29 @@ Then reboot.
 ### iMessage / iCloud / FaceTime
 
 Make sure to following [this guide](https://hackintosher.com/guides/quick-fixes-facetime-icloud-imessage-hackintosh-not-working/) to configure iMessage, iCloud and Facetime properly. 
+
+### Card Reader Driver
+
+To fix get the card reader working on T440P, do the following (thank you to NoobsPlanet for the initial guide which I have modified specifically for the T440P):
+
+- Open Finder and Goto S/L/E (System/Library/Extensions) and look for AppleStorageDriver.kext and copy this kext to Desktop
+- Right Click in AppleStorageDriver.kext located at Desktop and select Show Package Contents and navigate to Contents > Plugins > Then find `AppleUSBCardReader.kext`,
+- Right Click on `AppleUSBCardReader.kext` and select Show package Contents.
+- Navigate to Contents and you'll find Info.plist,
+- Right Click on Info.plist and open with Xcode or Plist Editor to edit a file.
+- Find `IOKitPersonalities > AppleSDCardReader > Physical Interconnect Location` and then edit Physical Interconnect Location value section as External,
+- Again find Vendor Identification and change value section to "Generic Reader by NoobsPlanet",
+- Again find Apple_Internal_SD_Card_Reader_1_00 and edit sting value idProduct and idVenedor to decimal idProduct and idVendor, you can find Product ID and Vendor ID information in System Info into HEX value, so you need to convert it to Decimal Value. You can convert it online through https://www.binaryhexconverter.com/hex-t. On my T440P Product ID is 5227 and the HEX value is 21031. The Vendor ID is 10EC and the Hex value is 4332.
+- Again find Apple_Internal_SD_Card_Reader_2_00 and edit the string value idProduct and idVendor to decimal value. (Use the same decimal value we did in above step)
+- Make sure you change value for Physical Interconnect Location on Apple_internal_SD_Card_Reader_1_00 and Apple_Internal_SD_Card_Reader_2_00 to External
+- Rename extension of original AppleStorageDriver.kext to .old
+- Save the edited file and Copy AppleStorageDriver.kext and paste it into /System/Library/Extensions/ and replace the kext if asked.
+- Open Terminal and fix permission and rebuild Kernel cache with following commands :
+
+```bash
+sudo chmod -R 755 /System/Library/Extensions/
+sudo chown -R root:wheel /System/Library/Extensions/
+sudo touch /System/Library/Extensions && sudo touch /Library/Extensions && sudo kextcache -u /
+```
+
+Reboot and enjoy working memory card!
