@@ -9,7 +9,7 @@
 
 ### 2.0 (2nd December 2019)
 
-Support for MacOS Catalina `10.15.x`
+Experimental Support for MacOS Catalina `10.15.x`. Tested on `10.15.1`.
 
 ### 1.4 (22th August 2019)
 
