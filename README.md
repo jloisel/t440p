@@ -1,6 +1,8 @@
 ![T440p MacOS Catalina](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-macos-catalina.png)
+*T440p running on MacOS Catalina with i5-4300m, 16GB RAM and 128GB mSata SSD Transcend MTS430S*
 
 ![T440p MacOS Mojave](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-macos-mojave.jpg)
+*T440p running on MacOS Mojave with i7 4712MQ, 16GB RAM and Western Digital 500GB SSD + 1TB HDD in Sata Ultrabay*
 
 ## Changelog
 =======
