@@ -1,7 +1,13 @@
-![T440p Hackintosh](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-hackintosh.jpg)
+![T440p MacOS Catalina](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-macos-catalina.png)
+
+![T440p MacOS Mojave](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-macos-mojave.jpg)
 
 ## Changelog
 =======
+
+### 2.0 (2nd December 2019)
+
+Support for MacOS Catalina `10.15.x`
 
 ### 1.4 (22th August 2019)
 
