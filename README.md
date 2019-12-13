@@ -75,7 +75,6 @@ In `Security` menu, set the following settings:
 
 - `Security > Security` Chip: must be **Disabled**,
 - `Memory Protection > Execution Prevention`: must be **Enabled**,
-- `Virtualization > Intel Virtualization Technology`: must be **Disabled**,
 - `Internal Device Access > Bottom Cover Tamper Detection`: must be **Disabled**,
 - `Anti-Theft > Current Setting`: must be **Disabled**,
 - `Anti-Theft > Computrace > Current Setting`: must be **Disabled**,
