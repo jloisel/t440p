@@ -7,6 +7,10 @@
 ## Changelog
 =======
 
+### 2.1 (17th December 2019)
+
+Updated AppleALC, Lilu, WhatEvergreen and VoodooPS2.
+
 ### 2.0 (2nd December 2019)
 
 Experimental Support for MacOS Catalina `10.15.x`. Tested on `10.15.1`.
