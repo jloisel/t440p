@@ -7,6 +7,10 @@
 ## Changelog
 =======
 
+### 2.2 (17th January 2020)
+
+Custom USBPorts.kext (instead of USBInjectAll.kext) with support for docking station.
+
 ### 2.1 (17th December 2019)
 
 Updated AppleALC, Lilu, WhatEvergreen and VoodooPS2.
