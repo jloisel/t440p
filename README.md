@@ -1,8 +1,10 @@
-This is a fork of [https://github.com/jloisel/t440p](https://github.com/jloisel/t440p).  
-The main difference is that the Voodoo-Kexts have bee replaced with the ones from 	[https://github.com/notthebee/t440p-hackintosh](https://github.com/notthebee/t440p-hackintosh).  
-The theme has also been replaced with [https://github.com/burpsuite/clover_theme](https://github.com/burpsuite/clover_theme). 
+This is a fork of [https://github.com/jloisel/t440p](https://github.com/jloisel/t440p)	  
+The main difference is that the Voodoo-Kexts have bee replaced with the ones from 	[https://github.com/notthebee/t440p-hackintosh](https://github.com/notthebee/t440p-hackintosh)  
+The theme has also been replaced with [https://github.com/burpsuite/clover_theme](https://github.com/burpsuite/clover_theme)  
+
+
 ###Note
-It is possible, that the Trackpad and/or the LAN won't work in the installer for some reason. If that is the case, use the kexts from [https://github.com/notthebee/t440p-hackintosh](https://github.com/notthebee/t440p-hackintosh) in the installer and the kexts from this repo in the final install.
+It is possible that the Trackpad and / or LAN won't work in the installer. If that is the case, use the kexts from [https://github.com/notthebee/t440p-hackintosh](https://github.com/notthebee/t440p-hackintosh) in the installer and the kexts from this repo in the final install.
 
 ![T440p MacOS Catalina](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-macos-catalina.png)
 *T440p running on MacOS Catalina with i5-4300m, 16GB RAM and 128GB mSata SSD Transcend MTS430S*
@@ -12,6 +14,10 @@ It is possible, that the Trackpad and/or the LAN won't work in the installer for
 
 ## Changelog
 =======
+
+### 2.3 (14th February 2020)
+
+Forked the repository
 
 ### 2.2 (17th January 2020)
 
