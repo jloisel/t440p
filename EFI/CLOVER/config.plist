@@ -414,7 +414,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>0</integer>
 	</dict>
 	<key>Comment</key>
 	<string>This file is for Lenovo Thinkpad T440P</string>
@@ -546,7 +546,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>clover-minimal-inverted</string>
+		<string>Simple</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
