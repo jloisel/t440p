@@ -3,7 +3,7 @@ The main difference is that the Voodoo-Kexts have bee replaced with the ones fro
 The theme has also been replaced with [https://github.com/burpsuite/clover_theme](https://github.com/burpsuite/clover_theme)  
 
 
-###Note
+### Note
 It is possible that the Trackpad and / or LAN won't work in the installer. If that is the case, use the kexts from [https://github.com/notthebee/t440p-hackintosh](https://github.com/notthebee/t440p-hackintosh) in the installer and the kexts from this repo in the final install.
 
 ![T440p MacOS Catalina](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-macos-catalina.png)
@@ -15,7 +15,7 @@ It is possible that the Trackpad and / or LAN won't work in the installer. If th
 ## Changelog
 =======
 
-### 2.3 (14th February 2020)
+### 2.3 (14th February 2020)  
 
 Forked the repository
 
