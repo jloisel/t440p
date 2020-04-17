@@ -7,7 +7,7 @@
 ## Changelog
 =======
 
-### 2.3 (17 April 2020)
+### 2.3 (17th April 2020)
 
 - Clover r5112
 - `USBPorts.kext` => `USBInjectAll.kext`
