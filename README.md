@@ -7,6 +7,15 @@
 ## Changelog
 =======
 
+### 2.3 (17 April 2020)
+
+- Clover r5112
+- `USBPorts.kext` => `USBInjectAll.kext`
+- AppleALC `1.4.8`
+- Lilu `1.4.3`
+- WhatEverGreen `1.3.8`
+- VoodooPS2Controller `2.1.3`
+
 ### 2.2 (17th January 2020)
 
 Custom USBPorts.kext (instead of USBInjectAll.kext) with support for docking station. (USB ports / Audio)
