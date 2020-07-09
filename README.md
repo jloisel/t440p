@@ -1,7 +1,7 @@
 This is a fork of [https://github.com/jloisel/t440p](https://github.com/jloisel/t440p).	  
 The main differences are: 
-- Voodoo-Kexts have bee replaced with the ones from [https://notthebee/t440p-hackintosh](https://github.com/notthebee/t440p-hackintosh) 
-- Removed uneccessary step to install kexts to /Library/Extension
+- Voodoo-Kexts have bee replaced with the ones from [https://github.com/notthebee/t440p-hackintosh](https://github.com/notthebee/t440p-hackintosh) 
+- Removed unnecessary step to install kexts to /Library/Extension
 - Replaced Lilu and AppleALC 
 - Updated clover 
 Thinkpad T440p Hackintosh configuration. This repository contains the following folders:
@@ -60,7 +60,7 @@ To finish the setup, you need to:
 
 - **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB drive). It will make the local drive bootable (so you can get ride of the USB drive now),
 
-You're almost done! Reboot and enjoy macOS on your Thinpad T440p.
+You're almost done! Reboot and enjoy macOS on your Thinkpad T440p.
 
 ## Miscellaneous
 
@@ -70,7 +70,7 @@ Thanks [Tony's T440p Guide](https://www.tonymacx86.com/threads/guide-lenovo-thin
 
 **Installing ALC Fix**
 
-- Open terminalm head into `t440p/Audio Fix` and run:
+- Open terminal head into `t440p/Audio Fix` and run:
 
 ```bash
 sudo ./install.sh
@@ -80,7 +80,7 @@ Reboot after installation.
 
 ### SSD Enable Trim
 
-If you Sata ssd hasn't trim enabled, run the following command from the *Terminal* to enable it:
+If you sata ssd hasn't trim enabled, run the following command from the *Terminal* to enable it:
 
 ```
 sudo trimforce enable
