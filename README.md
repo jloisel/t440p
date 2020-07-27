@@ -4,6 +4,32 @@
 ![T440p MacOS Mojave](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-macos-mojave.jpg)
 *T440p running on MacOS Mojave with i7 4712MQ, 16GB RAM and Western Digital 500GB SSD + 1TB HDD in Sata Ultrabay*
 
+## What works
+
+
+- Power management/sleep
+- Brightness/Volume Control
+- Battery Information
+- Audio : from internal speaker and headphone jack (see `Known problems` below)
+- USB Ports, Built-in Camera
+- Graphics Acceleration
+- FaceTime/iMessage
+- DVD Drive
+- Automatic OS updates
+- Trackpoint/Touchpad (gestures and scrolling included)
+- Dock USB ports
+- Dock DisplayPorts, HDMI, DVI and VGA
+
+## Known problems
+
+
+- Ultra Dock problems (sleep/shutdown causes kernel panic and reboot when docked, also audio jack broken)
+- Strong white noise from audio jack when waking up from sleep (reboot solves)
+- WiFi and Bluetooth
+- SD card reader
+- Automatic switching between internal and external speakers through jack (need to switch manually)
+
+
 ## Changelog
 =======
 
@@ -105,9 +131,12 @@ In `Startup` menu, set the following options:
 
 Now you can go through the install. 
 
-### Bootable USB Drive
+## Bootable USB Drive
 
-The guide [how to create a Mojave USB Installer Drive](https://hackintosher.com/guides/how-to-make-a-macos-10-14-mojave-flash-drive-installer/) explains how to create a USB flash drive to install MacOs on your T440p.
+### From macOS
+
+The guide [how to create a macOS USB Installer Drive](https://hackintosher.com/guides/how-to-make-a-macos-10-14-mojave-flash-drive-installer/) explains how to create a USB flash drive to install MacOs on your T440p.
+
 
 ### Copy EFI Folder to USB
 
@@ -133,6 +162,19 @@ sudo kextcache -i /
 You're almost done! Reboot and enjoy macOS on your Thinpad T440p.
 
 ## Miscellaneous
+
+### Internet Connection needed for installing macOS
+
+The problem is the following: for some reason when you write the USB from a PC (not a mac) it only writes the online installer, even though it downloads the full offline installer. Why? Good question, haven't figured out yet.
+Why ethernet won't work? Because in mojave / catalina, recovery it's disabled.
+
+Solutions:
+
+- You'll need to have a wireless network card compatible with mac, OR
+- use usb tethering your wifi from your phone.
+
+This is why `HoRNDIS.kext` has been added to the kexts. Make sure to connect your android phone with an USB cable to your laptop when installing macOS. Share the phone wi-fi connection with the connected laptop.
+
 
 ### for DW1820A WiFi Card
 
