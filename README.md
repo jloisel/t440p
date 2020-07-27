@@ -33,6 +33,10 @@
 ## Changelog
 =======
 
+### 2.4 (27th July 2020)
+
+HoRNDIS kext to support online USB installer through USB tethering (share wi-fi connection from your phone with the laptop through USB).
+
 ### 2.3 (17th April 2020)
 
 - Clover r5112
