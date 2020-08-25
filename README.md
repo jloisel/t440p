@@ -39,27 +39,27 @@ The bios has to be configured properly prior to installing MacOS.
 .
 |-- Security  
 |   |-- Security  
-|   |   `-- Security Chip  
-|   |       `-- Disabled  
+|   |   \`-- Security Chip  
+|   |       \`-- Disabled  
 |   |-- Memory Protection  
-|   |   `-- Execution Prevention  
-|   |       `-- Enabled  
+|   |   \`-- Execution Prevention  
+|   |       \`-- Enabled  
 |   |-- Internal Device Access  
-|   |   `-- Bottom Cover Tamper Detection  
-|   |       `-- Disabled  
+|   |   \`-- Bottom Cover Tamper Detection  
+|   |       \`-- Disabled  
 |   |-- Anti-Theft  
-|   |   `-- Current Setting  
-|   |       `-- Disabled  
-|   `-- Secure Boot  
-|       `-- Secure Boot  
-|           `-- Disabled  
-`-- Startup  
+|   |   \`-- Current Setting  
+|   |       \`-- Disabled  
+|   \`-- Secure Boot  
+|       \`-- Secure Boot  
+|           \`-- Disabled  
+\`-- Startup  
     |-- UEFI / Legacy Boot  
-    |   `-- Both  
+    |   \`-- Both  
     |-- UEFI / Legacy Priority  
-    |   `-- UEFI First  
-    `-- CSM Support  
-        `-- Yes  
+    |   \`-- UEFI First  
+    \`-- CSM Support  
+        \`-- Yes  
 
 ## Miscellaneous
 
