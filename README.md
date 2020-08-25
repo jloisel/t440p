@@ -37,29 +37,29 @@ This setus has been tested and confirmed to work on High Sierra, Mojave and Cata
 The bios has to be configured properly prior to installing MacOS.
 
 .
-├── Security
-│   ├── Security
-│   │   └── Security Chip
-│   │       └── Disabled
-│   ├── Memory Protection
-│   │   └── Execution Prevention
-│   │       └── Enabled
-│   ├── Internal Device Access
-│   │   └── Bottom Cover Tamper Detection
-│   │       └── Disabled
-│   ├── Anti-Theft
-│   │   └── Current Setting
-│   │       └── Disabled
-│   └── Secure Boot
-│       └── Secure Boot
-│           └── Disabled
-└── Startup
-    ├── UEFI / Legacy Boot
-    │   └── Both
-    ├── UEFI / Legacy Priority
-    │   └── UEFI First
-    └── CSM Support
-        └── Yes
+├── Security  
+│   ├── Security  
+│   │   └── Security Chip  
+│   │       └── Disabled  
+│   ├── Memory Protection  
+│   │   └── Execution Prevention  
+│   │       └── Enabled  
+│   ├── Internal Device Access  
+│   │   └── Bottom Cover Tamper Detection  
+│   │       └── Disabled  
+│   ├── Anti-Theft  
+│   │   └── Current Setting  
+│   │       └── Disabled  
+│   └── Secure Boot  
+│       └── Secure Boot  
+│           └── Disabled  
+└── Startup  
+    ├── UEFI / Legacy Boot  
+    │   └── Both  
+    ├── UEFI / Legacy Priority  
+    │   └── UEFI First  
+    └── CSM Support  
+        └── Yes  
 
 ## Miscellaneous
 
@@ -68,7 +68,7 @@ The bios has to be configured properly prior to installing MacOS.
 - Open the terminal, head into `t440p/Audio Fix` and run:
 
 ```bash
-# Catalina only to remove the root partition read/write
+# Catalina only to remount the root partition read/write
 sudo mount -uw /
 # Then run the install script
 sudo ./install.sh
