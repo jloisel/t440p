@@ -25,13 +25,21 @@
 
 - Ultra Dock problems (sleep/shutdown causes kernel panic and reboot when docked, also audio jack broken)
 - Strong white noise from audio jack when waking up from sleep (reboot solves)
-- WiFi and Bluetooth
 - SD card reader
 - Automatic switching between internal and external speakers through jack (need to switch manually)
 
 
 ## Changelog
 =======
+
+### 3.0 (28th August 2020)
+
+- Internal Intel Wifi now working thanks to [itwlm](https://github.com/OpenIntelWireless/itlwm)
+- AppleALC `1.5.1`
+- Lilu `1.4.6`
+- WhateverGreen `1.4.1`
+- Clover `r5121`
+
 
 ### 2.4 (27th July 2020)
 
@@ -110,6 +118,7 @@ It's a `99.99%` working hackintosh, including:
 - USB ports: custom made inside SSDT-T440p.aml & USBInjectAll kext (Thanks to rehabman & Snikii,
 - Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext.
 - Audio Jack connector,
+- Intel Wi-fi working with itwlm and [Heliport](https://github.com/OpenIntelWireless/HeliPort/releases),
 - And Display Port external display.
 
 ## Setup
@@ -179,6 +188,9 @@ Solutions:
 
 This is why `HoRNDIS.kext` has been added to the kexts. Make sure to connect your android phone with an USB cable to your laptop when installing macOS. Share the phone wi-fi connection with the connected laptop.
 
+### Integrated Intel Wi-fi
+
+Once macOS is installed, install [Heliport](https://github.com/OpenIntelWireless/HeliPort/releases) and connect to your favorite wi-fi network. Add Heliport to startup programs to launch it automatically on macOS boot.
 
 ### for DW1820A WiFi Card
 
