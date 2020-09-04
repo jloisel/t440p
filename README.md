@@ -169,15 +169,8 @@ Install macOS by booting on the USB key. It takes about 30min. The computer will
 To finish the setup, you need to:
 
 - **Copy EFI** folder from USB flash drive to local drive `EFI` partition (like you did for the USB drive). It will make the local drive bootable (so you can get ride of the USB drive now),
-- **Install Kexts**: install kernel extensions provided by `EFI/CLOVER/kexts/Other` from this repository into `/Library/Extensions`.
 
-Once kexts copied, run in *Terminal*:
-
-```
-sudo kextcache -i /
-```
-
-You're almost done! Reboot and enjoy macOS on your Thinpad T440p.
+You're done! Reboot and enjoy macOS on your Thinpad T440p.
 
 ## Miscellaneous
 
