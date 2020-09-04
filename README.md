@@ -22,7 +22,6 @@
 
 ## Known problems
 
-
 - Ultra Dock problems (sleep/shutdown causes kernel panic and reboot when docked, also audio jack broken)
 - Strong white noise from audio jack when waking up from sleep (reboot solves)
 - SD card reader
@@ -31,6 +30,11 @@
 
 ## Changelog
 =======
+
+### 3.1 (4th September 2020)
+
+- Add [Intel Bluetooth driver](https://github.com/OpenIntelWireless/IntelBluetoothFirmware): Bluetooth now works with the integrated Intel wireless card
+- Improve Audio fix
 
 ### 3.0 (28th August 2020)
 
@@ -192,34 +196,16 @@ This is why `HoRNDIS.kext` has been added to the kexts. Make sure to connect you
 
 Once macOS is installed, install [Heliport](https://github.com/OpenIntelWireless/HeliPort/releases) and connect to your favorite wi-fi network. Add Heliport to startup programs to launch it automatically on macOS boot.
 
-### for DW1820A WiFi Card
-
-- Please see the contents of DW1820A folder:
-- Copy the kexts into EFI/CLOVER/kexts/Other/
-- Copy the config.plist into EFI/CLOVER/ and overwrite the other config.plist file.
-
-- If you struggle to install macOS with the card installed, it is recommended to remove the card, install the OS via ethernet, and put the card back in once setup completes.
-
-Other drivers for Other Operating systems can be found here:
-
-https://github.com/ameeno/DELL-DW1820A-Drivers
-
 ### Audio Jack
 
-Thanks [Tony's T440p Guide](https://www.tonymacx86.com/threads/guide-lenovo-thinkpad-t440p.233282/) for help in getting this to work. By default, speaker audio should work, but audio via the headhpone jack does not.
-
-**Installing ALC Fix**
-
-- Copy the .zip file called `alc_fix.zip` inside the foldr `Audio` to the desktop,
-- Open terminal and run:
+- Open the terminal, head into `t440p/Audio Fix` and run:
 
 ```bash
-cd Desktop/alc_fix
-sudo su
-./install.sh
+# Catalina only to remount the root partition read/write
+sudo mount -uw /
+# Then run the install script
+sudo ./install.sh
 ```
-
-The provided `config.plist` is already configured to use *Audio* layout `28`.
 
 Reboot after installation. If you hear a strong white noise when connecting to audio jack, disconnect and reconnect your hearphones.
 
