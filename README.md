@@ -35,6 +35,7 @@
 
 - Add [Intel Bluetooth driver](https://github.com/OpenIntelWireless/IntelBluetoothFirmware): Bluetooth now works with the integrated Intel wireless card
 - Improve Audio fix
+- Remove DW1820A Wi-fi configuration (as Integrated Intel Wi-fi works fine now)
 
 ### 3.0 (28th August 2020)
 
@@ -110,7 +111,7 @@ Thinkpad T440p Hackintosh configuration. This repository contains the following 
 - `EFI`: put this in your EFI partition in `EFI` folder, including `Boot` and `CLOVER` sub-folders,
 - `EFI/CLOVER/kexts/Other`: kexts to install in `/Library/Extensions` or your local drive once macOS has been installed.
 
-Tested on High Sierra `10.13.6` and Mojave `10.14.4`, `10.14.5` & `10.14.6`.
+Tested on High Sierra `10.13.6`, Mojave `10.14.6` and Catalina `10.15.6`.
 
 It's a `99.99%` working hackintosh, including:
 
