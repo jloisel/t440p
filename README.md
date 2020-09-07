@@ -31,6 +31,10 @@
 ## Changelog
 =======
 
+### 3.2 (7th September 2020)
+
+- Remoe [Intel Bluetooth driver](https://github.com/OpenIntelWireless/IntelBluetoothFirmware): conflicts with itwlm (See [#177](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/177))
+
 ### 3.1 (4th September 2020)
 
 - Add [Intel Bluetooth driver](https://github.com/OpenIntelWireless/IntelBluetoothFirmware): Bluetooth now works with the integrated Intel wireless card
