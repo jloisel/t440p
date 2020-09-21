@@ -33,7 +33,7 @@
 
 ### 3.2.1 (21th September 2020)
 
-- Fix reboot after wake-up from sleep (#78)
+- Fix reboot after wake-up from sleep: replace AppleALC and CodecCommander by VoodooHDA `2.9.4` (#78)
 
 ### 3.2 (7th September 2020)
 
