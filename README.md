@@ -31,6 +31,10 @@
 ## Changelog
 =======
 
+### 3.2.1 (21th September 2020)
+
+- Fix reboot after wake-up from sleep (#78)
+
 ### 3.2 (7th September 2020)
 
 - Remoe [Intel Bluetooth driver](https://github.com/OpenIntelWireless/IntelBluetoothFirmware): conflicts with itwlm (See [#177](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/issues/177))
