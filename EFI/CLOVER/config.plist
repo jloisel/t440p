@@ -4,17 +4,368 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
-		<key>SSDT</key>
+		<key>AutoMerge</key>
+		<true/>
+		<key>DSDT</key>
 		<dict>
-			<key>DropOem</key>
+			<key>DropOEM_DSM</key>
 			<false/>
-			<key>Generate</key>
+			<key>Fixes</key>
 			<dict>
-				<key>PluginType</key>
+				<key>AddMCHC</key>
+				<true/>
+				<key>AddPNLF</key>
+				<true/>
+				<key>FixHPET</key>
+				<true/>
+				<key>FixIPIC</key>
+				<true/>
+				<key>FixMutex</key>
+				<true/>
+				<key>FixRTC</key>
+				<true/>
+				<key>FixTMR</key>
 				<true/>
 			</dict>
-			<key>NoOemTableId</key>
-			<false/>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>Change _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X09TSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WE9TSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change _DSM to XDSM</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0RTTQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WERTTQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change EHC1 to EH01</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change EHC2 to EH02</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change SAT1 to SATA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					U0FUMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					U0FUQQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change B0D3 to HDAU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					QjBEMw==
+					</data>
+					<key>Replace</key>
+					<data>
+					SERBVQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change PCI0.VID to IGPU #1 (Thinkpad)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					UENJMFZJRF8=
+					</data>
+					<key>Replace</key>
+					<data>
+					UENJMElHUFU=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change PCI0.VID to IGPU #2 (Thinkpad)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					VklEXwhfQURSDAAAAgA=
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQhfQURSDAAAAgA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_WAK,1,N) to ZWAK</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1dBSwE=
+					</data>
+					<key>Replace</key>
+					<data>
+					WldBSwE=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(ESEL,0,S) to ESEZ</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RVNFTAg=
+					</data>
+					<key>Replace</key>
+					<data>
+					RVNFWgg=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_RMV,0,N) to XRMV</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1JNVgA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFJNVgA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(GBIF,3,N) to XBIF</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0JJRgM=
+					</data>
+					<key>Replace</key>
+					<data>
+					WEJJRgM=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(GBST,4,N) to XBST</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0JTVAQ=
+					</data>
+					<key>Replace</key>
+					<data>
+					WEJTVAQ=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q15,0,N) to XQ15</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1ExNQA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFExNQA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q14,0,N) to XQ14</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1ExNAA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFExNAA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q6A,0,N) to XQ6A</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2QQA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2QQA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q16,0,N) to XQ16</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1ExNgA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFExNgA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q64,0,N) to XQ64</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2NAA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2NAA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q66,0,N) to XQ66</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2NgA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2NgA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q67,0,N) to XQ67</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2NwA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2NwA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q68,0,N) to XQ68</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2OAA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2OAA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q69,0,N) to XQ69</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1E2OQA=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFE2OQA=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Instant Wake Fix 1(_PRW 0x0d, 0x03) to (0x0d, 0x00)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					EhUDCg0KA14=
+					</data>
+					<key>Replace</key>
+					<data>
+					EhUDCg0KAF4=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Instant Wake Fix 2(_PRW 0x0d, 0x04) to (0x0d, 0x00)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					EgYCCg0KBA==
+					</data>
+					<key>Replace</key>
+					<data>
+					EgYCCg0KAA==
+					</data>
+				</dict>
+			</array>
 		</dict>
 		<key>DisabledAML</key>
 		<array>
@@ -22,273 +373,6 @@
 			<string>SSDT-XCPM.aml</string>
 			<string>SSDT-PluginType1.aml</string>
 		</array>
-		<key>AutoMerge</key>
-		<true/>
-		<key>DSDT</key>
-		<dict>
-			<key>Patches</key>
-			<array>
-				<dict>
-					<key>Find</key>
-					<data>X09TSQ==</data>
-					<key>Replace</key>
-					<data>WE9TSQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change _OSI to XOSI</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X0RTTQ==</data>
-					<key>Replace</key>
-					<data>WERTTQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change _DSM to XDSM</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>RUhDMQ==</data>
-					<key>Replace</key>
-					<data>RUgwMQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change EHC1 to EH01</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>RUhDMg==</data>
-					<key>Replace</key>
-					<data>RUgwMg==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change EHC2 to EH02</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>U0FUMQ==</data>
-					<key>Replace</key>
-					<data>U0FUQQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change SAT1 to SATA</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>QjBEMw==</data>
-					<key>Replace</key>
-					<data>SERBVQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change B0D3 to HDAU</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>UENJMFZJRF8=</data>
-					<key>Replace</key>
-					<data>UENJMElHUFU=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change PCI0.VID to IGPU #1 (Thinkpad)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>VklEXwhfQURSDAAAAgA=</data>
-					<key>Replace</key>
-					<data>SUdQVQhfQURSDAAAAgA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change PCI0.VID to IGPU #2 (Thinkpad)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1dBSwE=</data>
-					<key>Replace</key>
-					<data>WldBSwE=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_WAK,1,N) to ZWAK</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>RVNFTAg=</data>
-					<key>Replace</key>
-					<data>RVNFWgg=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(ESEL,0,S) to ESEZ</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1JNVgA=</data>
-					<key>Replace</key>
-					<data>WFJNVgA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_RMV,0,N) to XRMV</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>R0JJRgM=</data>
-					<key>Replace</key>
-					<data>WEJJRgM=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(GBIF,3,N) to XBIF</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>R0JTVAQ=</data>
-					<key>Replace</key>
-					<data>WEJTVAQ=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(GBST,4,N) to XBST</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1ExNQA=</data>
-					<key>Replace</key>
-					<data>WFExNQA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q15,0,N) to XQ15</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1ExNAA=</data>
-					<key>Replace</key>
-					<data>WFExNAA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q14,0,N) to XQ14</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1E2QQA=</data>
-					<key>Replace</key>
-					<data>WFE2QQA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q6A,0,N) to XQ6A</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1ExNgA=</data>
-					<key>Replace</key>
-					<data>WFExNgA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q16,0,N) to XQ16</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1E2NAA=</data>
-					<key>Replace</key>
-					<data>WFE2NAA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q64,0,N) to XQ64</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1E2NgA=</data>
-					<key>Replace</key>
-					<data>WFE2NgA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q66,0,N) to XQ66</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1E2NwA=</data>
-					<key>Replace</key>
-					<data>WFE2NwA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q67,0,N) to XQ67</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1E2OAA=</data>
-					<key>Replace</key>
-					<data>WFE2OAA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q68,0,N) to XQ68</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1E2OQA=</data>
-					<key>Replace</key>
-					<data>WFE2OQA=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Change Method(_Q69,0,N) to XQ69</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>EhUDCg0KA14=</data>
-					<key>Replace</key>
-					<data>EhUDCg0KAF4=</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Instant Wake Fix 1(_PRW 0x0d, 0x03) to (0x0d, 0x00)</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>EgYCCg0KBA==</data>
-					<key>Replace</key>
-					<data>EgYCCg0KAA==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>Instant Wake Fix 2(_PRW 0x0d, 0x04) to (0x0d, 0x00)</string>
-				</dict>
-			</array>
-			<key>Fixes</key>
-			<dict>
-				<key>FixHPET</key>
-				<true/>
-				<key>FixRTC</key>
-				<true/>
-				<key>FixTMR</key>
-				<true/>
-				<key>AddPNLF</key>
-				<true/>
-				<key>FixMutex</key>
-				<true/>
-				<key>FixIPIC</key>
-				<true/>
-				<key>AddMCHC</key>
-				<true/>
-			</dict>
-			<key>DropOEM_DSM</key>
-			<false/>
-		</dict>
 		<key>DropTables</key>
 		<array>
 			<dict>
@@ -302,111 +386,78 @@
 		</array>
 		<key>FixHeaders</key>
 		<true/>
+		<key>SSDT</key>
+		<dict>
+			<key>DropOem</key>
+			<false/>
+			<key>Generate</key>
+			<dict>
+				<key>PluginType</key>
+				<true/>
+			</dict>
+			<key>NoOemTableId</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Secure</key>
+		<key>Arguments</key>
+		<string>dart=0 -cdfon kext-dev-mode=1 keepsyms=1 -wegbeta -lilubeta -alcbeta</string>
+		<key>Debug</key>
+		<false/>
+		<key>DefaultVolume</key>
+		<string>LastBootedVolume</string>
+		<key>Log</key>
 		<false/>
 		<key>NeverHibernate</key>
 		<true/>
-		<key>Log</key>
+		<key>Secure</key>
 		<false/>
-		<key>Debug</key>
-		<false/>
-		<key>Arguments</key>
-		<string>dart=0 -cdfon kext-dev-mode=1 keepsyms=1 -wegbeta -lilubeta -alcbeta</string>
 		<key>Timeout</key>
 		<integer>5</integer>
-		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
 	</dict>
-	<key>GUI</key>
-	<dict>
-		<key>Theme</key>
-		<string>clover-minimal-inverted</string>
-		<key>Mouse</key>
-		<dict>
-			<key>Enabled</key>
-			<false/>
-		</dict>
-		<key>Hide</key>
-		<array>
-			<string>Preboot</string>
-		</array>
-		<key>Custom</key>
-		<dict>
-			<key>Entries</key>
-			<array>
-				<dict>
-					<key>NoCaches</key>
-					<false/>
-					<key>Type</key>
-					<string>OSXRecovery</string>
-					<key>Hidden</key>
-					<false/>
-					<key>Disabled</key>
-					<false/>
-					<key>Ignore</key>
-					<false/>
-				</dict>
-				<dict>
-					<key>Type</key>
-					<string>Windows</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Title</key>
-					<string>Windows</string>
-					<key>Ignore</key>
-					<false/>
-				</dict>
-			</array>
-		</dict>
-		<key>Scan</key>
-		<dict>
-			<key>Tool</key>
-			<true/>
-			<key>Entries</key>
-			<true/>
-			<key>Legacy</key>
-			<false/>
-			<key>Linux</key>
-			<true/>
-		</dict>
-	</dict>
-	<key>CPU</key>
-	<dict>
-		<key>TurboDisable</key>
-		<true/>
-	</dict>
+	<key>Comment</key>
+	<string>This file is for Lenovo Thinkpad T440P</string>
 	<key>Devices</key>
 	<dict>
-		<key>SetIntelBacklight</key>
-		<true/>
-		<key>SetIntelMaxBacklight</key>
-		<true/>
+		<key>Audio</key>
+		<dict>
+			<key>Inject</key>
+			<integer>0</integer>
+		</dict>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0)/Pci(0x02,0)</key>
 			<dict>
-				<key>framebuffer-con1-alldata</key>
-				<data>AQUSAAAEAACHAAAA</data>
-				<key>framebuffer-cursormem</key>
-				<data>AACQAA==</data>
 				<key>## @1 HDMI</key>
 				<string></string>
 				<key>## @2 VGA</key>
 				<string></string>
-				<key>framebuffer-patch-enable</key>
-				<integer>1</integer>
 				<key>AAPL,ig-platform-id</key>
-				<data>BgAmCg==</data>
+				<data>
+				BgAmCg==
+				</data>
+				<key>device-id</key>
+				<data>
+				EgQAAA==
+				</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>
+				AQUSAAAEAACHAAAA
+				</data>
 				<key>framebuffer-con1-enable</key>
 				<integer>1</integer>
-				<key>device-id</key>
-				<data>EgQAAA==</data>
-				<key>framebuffer-con2-type</key>
-				<data>AAEAAA==</data>
 				<key>framebuffer-con2-enable</key>
+				<integer>1</integer>
+				<key>framebuffer-con2-type</key>
+				<data>
+				AAEAAA==
+				</data>
+				<key>framebuffer-cursormem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
 				<integer>1</integer>
 			</dict>
 			<key>PciRoot(0)/Pci(0x03,0)</key>
@@ -424,11 +475,10 @@
 				<integer>28</integer>
 			</dict>
 		</dict>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<integer>0</integer>
-		</dict>
+		<key>SetIntelBacklight</key>
+		<true/>
+		<key>SetIntelMaxBacklight</key>
+		<true/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -445,6 +495,59 @@
 	<array>
 		<string>VBoxHfs</string>
 	</array>
+	<key>GUI</key>
+	<dict>
+		<key>Custom</key>
+		<dict>
+			<key>Entries</key>
+			<array>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Hidden</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>NoCaches</key>
+					<false/>
+					<key>Type</key>
+					<string>OSXRecovery</string>
+				</dict>
+				<dict>
+					<key>Disabled</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>Title</key>
+					<string>Windows</string>
+					<key>Type</key>
+					<string>Windows</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Hide</key>
+		<array>
+			<string>Preboot</string>
+		</array>
+		<key>Mouse</key>
+		<dict>
+			<key>Enabled</key>
+			<false/>
+		</dict>
+		<key>Scan</key>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Legacy</key>
+			<false/>
+			<key>Linux</key>
+			<true/>
+			<key>Tool</key>
+			<true/>
+		</dict>
+		<key>Theme</key>
+		<string>clover-minimal-inverted</string>
+	</dict>
 	<key>Graphics</key>
 	<dict>
 		<key>Inject</key>
@@ -459,49 +562,61 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
-		<key>KernelPm</key>
-		<true/>
 		<key>AppleRTC</key>
 		<true/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>KernelLapic</key>
 		<true/>
+		<key>KernelPm</key>
+		<true/>
 		<key>KernelToPatch</key>
 		<array>
 			<dict>
-				<key>Find</key>
-				<data>ILniAAAADzA=</data>
-				<key>Replace</key>
-				<data>ILniAAAAkJA=</data>
-				<key>Disabled</key>
-				<false/>
 				<key>Comment</key>
 				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>igKEwHRE</data>
-				<key>Replace</key>
-				<data>igKEwOtE</data>
 				<key>Disabled</key>
 				<false/>
+				<key>Find</key>
+				<data>
+				ILniAAAADzA=
+				</data>
+				<key>Replace</key>
+				<data>
+				ILniAAAAkJA=
+				</data>
+			</dict>
+			<dict>
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.13 release kernel (credit Vandroiy)</string>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>igKEwHRC</data>
-				<key>Replace</key>
-				<data>igKEwOtC</data>
 				<key>Disabled</key>
 				<false/>
+				<key>Find</key>
+				<data>
+				igKEwHRE
+				</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Replace</key>
+				<data>
+				igKEwOtE
+				</data>
+			</dict>
+			<dict>
 				<key>Comment</key>
 				<string>Disable panic kext logging on 10.14 release kernel (credit Vandroiy)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				igKEwHRC
+				</data>
 				<key>MatchOS</key>
 				<string>10.14.x</string>
+				<key>Replace</key>
+				<data>
+				igKEwOtC
+				</data>
 			</dict>
 		</array>
 	</dict>
@@ -514,21 +629,13 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>SerialNumber</key>
-		<string>C17N7XYGFH00</string>
-		<key>SmUUID</key>
-		<string>35606EA3-951D-411E-9E9A-C6BA6696EF56</string>
 		<key>ProductName</key>
 		<string>MacBookPro11,1</string>
-		<key>BoardSerialNumber</key>
-		<string>C17N7XYGFH0096HJT</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Yes</string>
+		<string>Detect</string>
 	</dict>
-	<key>Comment</key>
-	<string>This file is for Lenovo Thinkpad T440P</string>
 </dict>
 </plist>
