@@ -30,6 +30,10 @@
 ## Changelog
 =======
 
+### 3.2.2 (3rd October 2020)
+
+- Remove audio fix scripts (not required anymore since we use VoodooHDA now)
+
 ### 3.2.1 (21th September 2020)
 
 - Fix reboot after wake-up from sleep: replace AppleALC and CodecCommander by VoodooHDA `2.9.4` (#78)
