@@ -10,7 +10,7 @@
 - Power management/sleep
 - Brightness/Volume Control
 - Battery Information
-- Audio : from internal speaker and headphone jack (see `Known problems` below)
+- Audio : from internal speaker and headphone jack
 - USB Ports, Built-in Camera
 - Graphics Acceleration
 - FaceTime/iMessage
@@ -23,7 +23,6 @@
 ## Known problems
 
 - Ultra Dock problems (sleep/shutdown causes kernel panic and reboot when docked, also audio jack broken)
-- Strong white noise from audio jack when waking up from sleep (reboot solves)
 - SD card reader
 - Automatic switching between internal and external speakers through jack (need to switch manually)
 
@@ -127,7 +126,7 @@ It's a `99.99%` working hackintosh, including:
 - **Power management**, **Temperature sensors**: Thanks to [FakeSMC](https://bitbucket.org/RehabMan/os-x-fakesmc-kozlek), which also emulates macbook pro hardware,
 - **Battery status**: handled by [ACPIBatteryManager](https://bitbucket.org/RehabMan/os-x-acpi-battery-driver) kext,
 - Brightness control: Thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext,
-- Audio on speakers: using [AppleALC](https://github.com/acidanthera/AppleALC) kext,
+- Audio on speakers: using VoodooHDA kext,
 - USB ports: custom made inside SSDT-T440p.aml & USBInjectAll kext (Thanks to rehabman & Snikii,
 - Graphical acceleration (QE/CI): thanks to [WhatEverGreen](https://github.com/acidanthera/WhateverGreen) kext.
 - Audio Jack connector,
@@ -198,18 +197,6 @@ This is why `HoRNDIS.kext` has been added to the kexts. Make sure to connect you
 
 Once macOS is installed, install [Heliport](https://github.com/OpenIntelWireless/HeliPort/releases) and connect to your favorite wi-fi network. Add Heliport to startup programs to launch it automatically on macOS boot.
 
-### Audio Jack
-
-- Open the terminal, head into `t440p/Audio Fix` and run:
-
-```bash
-# Catalina only to remount the root partition read/write
-sudo mount -uw /
-# Then run the install script
-sudo ./install.sh
-```
-
-Reboot after installation. If you hear a strong white noise when connecting to audio jack, disconnect and reconnect your hearphones.
 
 ### SSD Enable Trim
 
