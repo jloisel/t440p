@@ -30,6 +30,10 @@
 ## Changelog
 =======
 
+### 3.2.3 (4th November 2020)
+
+- Add missing itlwm driver (intel wifi)
+
 ### 3.2.2 (3rd October 2020)
 
 - Remove audio fix scripts (not required anymore since we use VoodooHDA now)
