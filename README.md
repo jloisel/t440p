@@ -1,3 +1,8 @@
+![T440p MacOS BigSur](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-macos-bigsur.jpg)
+*T440p running on MacOS BigSur, Thanks to [2000c43](https://2000c43.com/blog/the-perfect-laptop)*
+
+**Beta EFI (Using OpenCore) For BigSur**: [Download Here](https://github.com/jloisel/t440p/files/5637832/EFI-20201203T172653Z-001.zip)
+
 ![T440p MacOS Catalina](https://raw.githubusercontent.com/jloisel/t440p/master/t440p-macos-catalina.png)
 *T440p running on MacOS Catalina with i5-4300m, 16GB RAM and 128GB mSata SSD Transcend MTS430S*
 
