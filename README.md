@@ -35,6 +35,11 @@
 ## Changelog
 =======
 
+
+### 3.2.4 (22th December 2020)
+
+- Add missing itlwm driver (intel wifi)
+
 ### 3.2.3 (4th November 2020)
 
 - Add missing itlwm driver (intel wifi)
